@@ -1,0 +1,18 @@
+info:
+  name: List Members - Paginated Filter Sort
+  type: http
+  seq: 2
+
+http:
+  method: get
+  url: http://localhost:5100/api/organizations/{{org_id}}/members?page=1&pageSize=10&search=Member&sortBy=role&sortOrder=asc
+  headers:
+    - name: Authorization
+      value: Bearer {{user1_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

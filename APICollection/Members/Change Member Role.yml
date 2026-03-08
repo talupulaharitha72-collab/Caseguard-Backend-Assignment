@@ -1,0 +1,26 @@
+info:
+  name: Change Member Role
+  type: http
+  seq: 4
+
+http:
+  method: put
+  url: http://localhost:5100/api/organizations/{{org_id}}/members/{{user_id}}/role
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{token}}
+  body:
+    type: json
+    data: |-
+      {
+        "role": "Admin"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

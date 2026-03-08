@@ -1,0 +1,28 @@
+info:
+  name: Update License
+  type: http
+  seq: 6
+
+http:
+  method: put
+  url: http://localhost:5100/api/licenses/{{license_id}}
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  body:
+    type: json
+    data: |-
+      {
+        "expiresAt": "2027-12-31T00:00:00Z",
+        "autoRenew": true,
+        "status": "Active"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

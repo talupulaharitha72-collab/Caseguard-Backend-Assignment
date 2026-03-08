@@ -1,0 +1,27 @@
+info:
+  name: Create License - Auto Renew
+  type: http
+  seq: 2
+
+http:
+  method: post
+  url: http://localhost:5100/api/licenses
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": "{{org_id}}",
+        "autoRenew": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

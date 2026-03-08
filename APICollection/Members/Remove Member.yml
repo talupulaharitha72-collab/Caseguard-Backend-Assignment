@@ -1,0 +1,18 @@
+info:
+  name: Remove Member
+  type: http
+  seq: 5
+
+http:
+  method: delete
+  url: http://localhost:5100/api/organizations/{{org_id}}/members/{{user_id}}
+  headers:
+    - name: Authorization
+      value: Bearer {{token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

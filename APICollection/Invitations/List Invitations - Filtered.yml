@@ -1,0 +1,18 @@
+info:
+  name: List Invitations - Filtered
+  type: http
+  seq: 3
+
+http:
+  method: get
+  url: http://localhost:5100/api/organizations/{{org_id}}/invitations?status=Pending&search=bob&sortOrder=desc
+  headers:
+    - name: Authorization
+      value: Bearer {{user1_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

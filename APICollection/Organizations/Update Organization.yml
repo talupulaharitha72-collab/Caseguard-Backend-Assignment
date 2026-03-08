@@ -1,0 +1,27 @@
+info:
+  name: Update Organization
+  type: http
+  seq: 5
+
+http:
+  method: put
+  url: http://localhost:5100/api/organizations/{{org_id_2}}
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{user2_token}}
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Company 2",
+        "description": "Company 2 description"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

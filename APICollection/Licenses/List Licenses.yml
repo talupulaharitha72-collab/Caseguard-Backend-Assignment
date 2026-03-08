@@ -1,0 +1,18 @@
+info:
+  name: List Licenses
+  type: http
+  seq: 3
+
+http:
+  method: get
+  url: http://localhost:5100/api/licenses
+  headers:
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

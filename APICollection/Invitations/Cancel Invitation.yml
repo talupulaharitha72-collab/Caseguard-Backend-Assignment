@@ -1,0 +1,18 @@
+info:
+  name: Cancel Invitation
+  type: http
+  seq: 5
+
+http:
+  method: delete
+  url: http://localhost:5100/api/organizations/{{org_id}}/invitations/{{invitation_id}}
+  headers:
+    - name: Authorization
+      value: Bearer {{user1_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

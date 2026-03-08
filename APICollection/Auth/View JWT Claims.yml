@@ -1,0 +1,18 @@
+info:
+  name: View JWT Claims
+  type: http
+  seq: 5
+
+http:
+  method: get
+  url: http://localhost:5100/api/auth/claims
+  headers:
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

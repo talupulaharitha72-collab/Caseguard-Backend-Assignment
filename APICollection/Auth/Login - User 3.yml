@@ -1,0 +1,24 @@
+info:
+  name: Login - User 3
+  type: http
+  seq: 4
+
+http:
+  method: post
+  url: http://localhost:5100/api/auth/login
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "user3@test.com",
+        "role": "User"
+      }
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

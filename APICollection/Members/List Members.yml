@@ -1,0 +1,18 @@
+info:
+  name: List Members
+  type: http
+  seq: 1
+
+http:
+  method: get
+  url: http://localhost:5100/api/organizations/{{org_id}}/members
+  headers:
+    - name: Authorization
+      value: Bearer {{user2_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

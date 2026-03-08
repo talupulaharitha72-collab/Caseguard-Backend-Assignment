@@ -1,0 +1,34 @@
+name: Local
+variables:
+  - name: base_url
+    value: http://localhost:5100
+  - name: admin_token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBlMDQzNzViLTAwNjItYjNlZC1jN2Y0LTA5ZTk5NDA3Njg3MiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkbWluQHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW4iLCJleHAiOjE3NzI5Nzg5MDYsImlzcyI6IkNhc2VHdWFyZCIsImF1ZCI6IkNhc2VHdWFyZCJ9.A8IRlOmNbncQGBjdJk-dno_YWJJdhfVBsNfChfDNmRg
+  - name: user1_token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijc3OGM3Y2ViLWY0OTEtYzdmNC1jZGQ3LTEyNjM1Mjc3YTFmMiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InVzZXIxQHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTc3Mjk3OTAxNiwiaXNzIjoiQ2FzZUd1YXJkIiwiYXVkIjoiQ2FzZUd1YXJkIn0.NYGjb0CEWZVUQTinuWKqnxaG12BGlWdVpBsamUxhJbc
+  - name: user2_token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM5YTgwMGNjLTQ1MTctNmU3ZS03MjU5LTkwMGZjMjVhYzg3OSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InVzZXIyQHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTc3Mjk3OTAyNCwiaXNzIjoiQ2FzZUd1YXJkIiwiYXVkIjoiQ2FzZUd1YXJkIn0.9aEay9TyeFKcpcm7ilyxgEj4_OQR9J4zt-70dcLKNB4
+  - name: user3_token
+    value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImM1N2I5NjhkLTAyNzItZDRiNi00NjE4LWRjYjA3NTNhZmU1ZCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InVzZXIzQHRlc3QuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTc3Mjk3MjM1NCwiaXNzIjoiQ2FzZUd1YXJkIiwiYXVkIjoiQ2FzZUd1YXJkIn0.PdADyxHeg-8IRpGrhQj44Mb-YVCD65tQ7j811TaZCUU
+  - name: admin_user_id
+    value: 0e04375b-0062-b3ed-c7f4-09e994076872
+  - name: user1_id
+    value: 778c7ceb-f491-c7f4-cdd7-12635277a1f2
+  - name: user2_id
+    value: c9a800cc-4517-6e7e-7259-900fc25ac879
+  - name: user3_id
+    value: c57b968d-0272-d4b6-4618-dcb0753afe5d
+  - name: org_id
+    value: f88c5d57-2976-439f-b609-fd517530440d
+  - name: org_id_2
+    value: 9a7f0800-a1d2-4330-a694-848bc9103328
+  - name: invitation_id
+    value: a9708a3a-cbf4-4258-b785-b291f87af793
+  - name: invitation_id_2
+    value: ""
+  - name: license_id
+    value: 036e13e4-d96b-415a-aca9-b52486728efa
+  - name: license_id_2
+    value: ""
+  - name: license_id_auto
+    value: ""

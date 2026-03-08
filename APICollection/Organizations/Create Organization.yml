@@ -1,0 +1,27 @@
+info:
+  name: Create Organization
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:5100/api/organizations
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{user2_token}}
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Company 1",
+        "description": "Test organization"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

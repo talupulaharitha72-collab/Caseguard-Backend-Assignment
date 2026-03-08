@@ -1,0 +1,18 @@
+info:
+  name: Revoke License
+  type: http
+  seq: 7
+
+http:
+  method: delete
+  url: http://localhost:5100/api/licenses/{{license_id}}
+  headers:
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

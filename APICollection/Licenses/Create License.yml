@@ -1,0 +1,27 @@
+info:
+  name: Create License
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: http://localhost:5100/api/licenses
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: Authorization
+      value: Bearer {{admin_token}}
+  body:
+    type: json
+    data: |-
+      {
+        "organizationId": "{{org_id}}",
+        "autoRenew": false
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
