@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CaseGuard.Backend.Assignment.Contracts/CaseGuard.Backend.Assignment.Contracts.csproj" />
+  <Project Path="CaseGuard.Backend.Assignment.Tests/CaseGuard.Backend.Assignment.Tests.csproj" />
+  <Project Path="CaseGuard.Backend.Assignment/CaseGuard.Backend.Assignment.csproj" />
+</Solution>
