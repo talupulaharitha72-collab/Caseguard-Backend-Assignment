@@ -11,11 +11,11 @@ Organizations can manage members and invitations, while administrators manage li
 ## Tech Stack
 
 * **Language:** C#
-* **Framework:** ASP.NET Core Web API
+* **Framework:** ASP.NET Core Web API (.NET 8)
 * **Database:** PostgreSQL
 * **ORM:** Entity Framework Core
 * **Authentication:** JWT
-* **API Docs:** OpenAPI + Scalar
+* **API Docs:** Swagger
 
 ---
 
@@ -57,6 +57,14 @@ APICollection
 
 ---
 
+## Prerequisites
+
+* .NET 8 SDK
+* PostgreSQL
+* Git
+
+---
+
 ## Setup
 
 ### Clone repository
@@ -95,7 +103,7 @@ http://localhost:5100
 Interactive documentation:
 
 ```
-http://localhost:5100/scalar
+http://localhost:5100/swagger
 ```
 
 ---
@@ -116,6 +124,12 @@ POST /api/auth/login
 
 Use the returned JWT token for protected endpoints.
 
+Example:
+
+```
+Authorization: Bearer <token>
+```
+
 ---
 
 ## License Behavior
@@ -125,5 +139,4 @@ Use the returned JWT token for protected endpoints.
 * Auto-renew licenses are renewed automatically by a background job
 
 ---
-
 
